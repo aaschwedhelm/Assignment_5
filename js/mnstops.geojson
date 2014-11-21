@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "stop_id": 1, "stop_name": "Grand Central Terminal", "stop_desc": null, "stop_lat": 40.752998, "stop_lon": -73.977056 }, "geometry": { "type": "Point", "coordinates": [ -73.977057441677303, 40.753006265290239 ] } },
+{ "type": "Feature", "properties": { "stop_id": 4, "stop_name": "Harlem-125th St.", "stop_desc": null, "stop_lat": 40.805157, "stop_lon": -73.939149 }, "geometry": { "type": "Point", "coordinates": [ -73.939150432697929, 40.805165276826258 ] } },
+{ "type": "Feature", "properties": { "stop_id": 622, "stop_name": "Yankee E153 St.", "stop_desc": null, "stop_lat": 40.825300, "stop_lon": -73.929900 }, "geometry": { "type": "Point", "coordinates": [ -73.929901430957415, 40.825308281089029 ] } },
+{ "type": "Feature", "properties": { "stop_id": 9, "stop_name": "Morris Heights", "stop_desc": null, "stop_lat": 40.854252, "stop_lon": -73.919583 }, "geometry": { "type": "Point", "coordinates": [ -73.919584429410804, 40.854260287108417 ] } },
+{ "type": "Feature", "properties": { "stop_id": 10, "stop_name": "University Heights", "stop_desc": null, "stop_lat": 40.862248, "stop_lon": -73.913120 }, "geometry": { "type": "Point", "coordinates": [ -73.913121427825061, 40.862256288896994 ] } },
+{ "type": "Feature", "properties": { "stop_id": 11, "stop_name": "Marble Hill", "stop_desc": null, "stop_lat": 40.874333, "stop_lon": -73.910941 }, "geometry": { "type": "Point", "coordinates": [ -73.910942427862139, 40.874341291333408 ] } },
+{ "type": "Feature", "properties": { "stop_id": 14, "stop_name": "Spuyten Duyvil", "stop_desc": null, "stop_lat": 40.878245, "stop_lon": -73.921455 }, "geometry": { "type": "Point", "coordinates": [ -73.921456431472421, 40.878253291728079 ] } },
+{ "type": "Feature", "properties": { "stop_id": 16, "stop_name": "Riverdale", "stop_desc": null, "stop_lat": 40.903981, "stop_lon": -73.914126 }, "geometry": { "type": "Point", "coordinates": [ -73.914127430691181, 40.90398929700811 ] } },
+{ "type": "Feature", "properties": { "stop_id": 54, "stop_name": "Melrose", "stop_desc": null, "stop_lat": 40.825761, "stop_lon": -73.915231 }, "geometry": { "type": "Point", "coordinates": [ -73.915232426282941, 40.825769281693546 ] } },
+{ "type": "Feature", "properties": { "stop_id": 55, "stop_name": "Tremont", "stop_desc": null, "stop_lat": 40.847301, "stop_lon": -73.899550 }, "geometry": { "type": "Point", "coordinates": [ -73.899551422564329, 40.847309286453005 ] } },
+{ "type": "Feature", "properties": { "stop_id": 56, "stop_name": "Fordham", "stop_desc": null, "stop_lat": 40.861500, "stop_lon": -73.890580 }, "geometry": { "type": "Point", "coordinates": [ -73.890581420551115, 40.861508289541391 ] } },
+{ "type": "Feature", "properties": { "stop_id": 57, "stop_name": "Botanical Garden", "stop_desc": null, "stop_lat": 40.866555, "stop_lon": -73.883109 }, "geometry": { "type": "Point", "coordinates": [ -73.883110418462422, 40.866563290790587 ] } },
+{ "type": "Feature", "properties": { "stop_id": 58, "stop_name": "Williams Bridge", "stop_desc": null, "stop_lat": 40.878569, "stop_lon": -73.871064 }, "geometry": { "type": "Point", "coordinates": [ -73.87106541532961, 40.878577293558898 ] } },
+{ "type": "Feature", "properties": { "stop_id": 59, "stop_name": "Woodlawn", "stop_desc": null, "stop_lat": 40.895361, "stop_lon": -73.862916 }, "geometry": { "type": "Point", "coordinates": [ -73.862917413737364, 40.895369297122649 ] } },
+{ "type": "Feature", "properties": { "stop_id": 61, "stop_name": "Wakefield", "stop_desc": null, "stop_lat": 40.905424, "stop_lon": -73.854665 }, "geometry": { "type": "Point", "coordinates": [ -73.854666411702524, 40.90543229937574 ] } }
+]
+}
