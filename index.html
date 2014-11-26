@@ -9,9 +9,18 @@
 </head>
 <body>
   <h1>New York City Subway</h1>
-    <h2>This map shows the New York City subway along with its stations, all New York City Parks, and Community Districts. Click on each feature for further information</h2>
+    <h2>This map shows the New York City subway along with its stations, all New York City Parks, and Community Districts. </h2>
+    <p1>Mapping Methodology: </p1>
+    <br>
+    <p2>All the data was downloaded from the "NYC Open Data" and "Bytes of the Big Apple" websites in shapefile format and converted to geojson format in QGIS. The subway lines layer was edited in QGIS to resemble the original NYC Subway map more closely. All the lines were moved slightly to avoid their overlapping and allow for better visibility</p2>
+    <br>
+    <p3>Data Sources:</p3>
+    <br>
+    <p4>Subway Lines and Stations: Downloaded from NYC Open Data; source: MTA
+    <br>
+    <b5>Community Districts and NYC Parks: Downloaded from Bytes of the Big Apple (NYC DCP); Community Districts source: NYC DCP. Parks source: NYC DoITT  
 
-  <a href="http://leafletjs.com/reference.html">here</a>. </p>
+  <a href="http://leafletjs.com/reference.html"></a>. </p>
   <div id="map"></div> 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>

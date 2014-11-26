@@ -1,5 +1,5 @@
 body {
-        padding: 20px;
+        padding: 5px;
 }
 #map {
         height: 825px;
@@ -8,10 +8,30 @@ h1 {
         font-size: 40px;
       	margin-top:0;
         color: black;
+        text-align: center;
+        padding: 5px;
 }
 
 h2 {
         font-size: 16px;
         color: black;
-        padding-bottom: 20px;
+        padding: 5px;
+}
+p1 {
+	    color: black;
+	    font-size:15px;
+	    font-weight: bold;
+}
+p2 {
+	    color: black;
+	    font-size:15px;
+}
+p3 {
+	    color: black;
+	    font-size:15px;
+	    font-weight: bold;
+}
+p4 {
+	    color: black;
+	    font-size:15px;
 }
