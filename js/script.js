@@ -4,9 +4,10 @@ var Stamen_Toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 	subdomains: 'abcd',
 	minZoom: 0,
-	maxZoom: 20
-}).addTo(map);
+	maxZoom: 20,
+	//Layers: [geojsonLayer, geojsonLayer2, geojsonLayer3, geojsonLayer4]
 
+}).addTo(map);
 
 $.getJSON('./js/cdistricts.geojson',function(data){
 	window.data = data;
@@ -20,11 +21,8 @@ $.getJSON('./js/cdistricts.geojson',function(data){
 			dashArray: "5, 5",
 		}
 	}).addTo(map);
-});
 
-
-//Get external geoJSON file
-$.getJSON('./js/parks.geojson',function(data){
+	$.getJSON('./js/parks.geojson',function(data){
 	window.data = data;
 	var geojsonLayer2 = L.geoJson(data.features, {
 		style: {
@@ -104,14 +102,38 @@ $.getJSON('./js/sublines.geojson',function(data){
 				case "Air": return {color: "#FFFF00", opacity: "1", weight: "3", dashArray: "5, 5"};
 				case "SI": return {color: "blue", opacity: "1", weight: "3", dashArray: "5, 5"};
 
-
 				//color: routeId(feature.properties.route_id),
 			}
 		},
 
     }).addTo(map);
+
+$.getJSON('./js/substops.geojson',function(data){
+	window.data = data;
+	var geojsonLayer4 = L.geoJson(data.features, {
+		style: {
+        radius: 6,
+		weight: "2",
+		opacity: "1",
+		fillOpacity: "1",
+		fillColor: "rgba(255, 255, 255, 1)",
+		color: "rgba(0, 0, 0, 1)",
+},
+		pointToLayer: function (feature, latlong) {
+			return L.circleMarker(latlong, geojsonLayer4);
+
+		}
+		
+		
+	}).addTo(map);
 });
 
+});
+
+});
+
+
+//Get external geoJSON file
 
 
 
