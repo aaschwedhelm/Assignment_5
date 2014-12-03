@@ -130,11 +130,27 @@ $.getJSON('./js/substops.geojson',function(data){
 
 });
 
+
+$.getJSON('./js/substops.geojson',function(data){
+	window.data = data;
+	var geojsonLayer4 = L.geoJson(data.features, {
+		style: {
+        radius: 6,
+		weight: "2",
+		opacity: "1",
+		fillOpacity: "1",
+		fillColor: "rgba(255, 255, 255, 1)",
+		color: "rgba(0, 0, 0, 1)",
+},
+		pointToLayer: function (feature, latlong) {
+			return L.circleMarker(latlong, geojsonLayer4);
+
+
+		}
+		
+		
+	}).addTo(map);
 });
-
-
-//Get external geoJSON file
-
 
 
 //var Hydda_RoadsAndLabels = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
